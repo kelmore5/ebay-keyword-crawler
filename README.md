@@ -47,7 +47,9 @@ Once downloaded and dependencies are installed, you can run it via
 
     python3 lib/EbayParser.py
     
-You can also change the boards being parsed and the keywords to search for by modifying EbayParser.py (top of file, line 40)
+
+
+You can change the boards being parsed and the keywords to search for by modifying EbayParser.py (top of file, line 40)
 
 ```python
 # Set keywords to search for here
