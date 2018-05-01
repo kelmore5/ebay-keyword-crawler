@@ -28,12 +28,12 @@ adopted if need be.
 
 - python 3.6
 - pyvirtualdisplay
+- xlrd
+- xlwt
 - [selenium](http://selenium-python.readthedocs.io/installation.html)
 - [Xvfb](https://www.x.org/archive/X11R7.6/doc/man/man1/Xvfb.1.xhtml) (May not be necessary - check install of pyvirtualdisplay)
 - [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/)
 - [peewee](https://github.com/coleifer/peewee)
-- xlrd
-- xlwt
 
 *pyvirtualdisplay and Xvfb are used to create the headless display, selenium and chromedriver are used for the actual browsing
 
