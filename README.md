@@ -57,17 +57,18 @@ You can also change the boards being parsed and the keywords to search for by mo
 
 ## Proof of Concept
 
-Below are some pictures to give a proof of concept:
+Below are some pictures to give a proof of concept. You can also see more pictures in the "demoes" folder above,
+as well as the sample Excel sheet from the screenshot below.
 
 Here's a pic of the forum from ebay before download
 
 ![Ebay Bidding and Buying Forum](/demoes/ebay_bidding_and_buying.png "Ebay Bidding and Buying Forum")
 
-And the resulting database in SQL
+and the resulting database in SQL
 
 ![Posts SQL Database](/demoes/posts_database.png "Posts SQL Database")
 
-Some examples of the messages from ebay being parsed
+Some examples of the messages being parsed from ebay 
 
 ![Ebay Messages Example 1](/demoes/ebay_messages_1.png "Ebay Messages Example")
 
@@ -77,7 +78,7 @@ Both messages now in database, ready to be searched through for keywords
 
 ![Messages SQL Database](/demoes/messages_database.png "Messages SQL Database")
 
-Keywords database
+The keywords database
 
 ![Keywords SQL Database](/demoes/keywords_database.png "Keyboards SQL Database")
 
