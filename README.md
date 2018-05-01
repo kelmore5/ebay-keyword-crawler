@@ -1,50 +1,87 @@
-# SeleniumBrowser
+# Ebay Keyword Crawler
 
-SeleniumBrowser is a fairly small tool to be used in conjunction with Selenium automated browser via Chrome.
-Previously, I had been building a web crawler and needed a helper class to deal with some of the smaller,
-yet important intricacies. This class does very few things, but does them well.
+This is a tool that was used for a research project involving analysis of the community pages
+on ebay.com
 
-SeleniumBrowser is meant primarily to be a container for a selenium headless browsing setup that
-routinely checks for the existence of links, buttons, images, etc the user needs when crawling
-through a site.
+It uses peewee and SQLite for data management; Selenium, Chrome, and pyvirtualdisplay for headless browsing
+(since ebay doesn't have its own API); and xlrd and xlwt for outputting the data to CSV and Excel.
 
-The class takes two arguments: The path to an installed version of chromedriver (required) and
-a ChromeOptions class that can be created via Selenium (optional).
+Utilizing Selenium, the script has four steps: 
 
-Once initialized, the class will create a virtual display for chrome to reside in using pyvirtualdisplay and
-Xfvb, and then create a headless (virtual/invisible) chrome browser within that display. Afterwards,
-the user can use the class to browse to different URLs while also easily checking for loaded pages
-and required elements.
+- Navigate to set community forums on ebay and download all the links for each board
+- Once obtained, download all the messages for each forum post
+- Parse out pre-defined keywords within each message and upload results to an SQLite database
+- Output the results to CSV and/or Excel
 
-And that's it! Simple but handy.
+Every page parsed using Selenium is downloaded and saved to a database via SQLite for safe-keeping,
+and the script should restart the browser automatically to forgo ebay's crawling protection.
 
-I do not have specific plans right now to expand this project further but may in the future as needed.
+This project utilizes two other projects of mine: [python-utilities](https://github.com/kelmore5/python-utilities) and [SeleniumBrowser](https://github.com/kelmore5/SeleniumBrowser), both of which
+should already be uploaded within this git repository.
 
 ## Install
 
 ### Dependencies
 
-- python 3.5 or 3.6
+- python 3.6
 - pyvirtualdisplay
 - [selenium](http://selenium-python.readthedocs.io/installation.html)
 - [Xvfb](https://www.x.org/archive/X11R7.6/doc/man/man1/Xvfb.1.xhtml) (May not be necessary - check install of pyvirtualdisplay)
 - [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/)
+- [peewee](https://github.com/coleifer/peewee)
+- xlrd
+- xlwt
 
 *pyvirtualdisplay and Xvfb are used to create the headless display, selenium and chromedriver are used for the actual browsing
 
-### Import
+### Run
 
-Once the dependencies are installed, importing is as simple as:
+First, download the repo
 
-    import SeleniumBrowser from SeleniumBrowser
+    git clone https://github.com/kelmore5/ebay-keyword-crawler
+    
+Once downloaded and dependencies are installed, you can simply run it via
 
-    path_to_chromedriver = '/home/user/chromedriver'
-    browser = new SeleniumBrowser(path_to_chromedriver)
-
-Afterwards, use the `XPathLookupProps` class to create property classes for page request checks
-and then the function `SeleniumBrowser.browse_to_url` to do the actual browsing.
+    python3 lib/EbayParser.py
+    
+You can also change the boards being parsed and the keywords to search for by modifying EbayParser.py (top of file)
 
 ## Extra Links
 
 - [Selenium](https://www.seleniumhq.org/)
 - [Selenium Python Docs](http://selenium-python.readthedocs.io/)
+- [Peewee Documentation](http://docs.peewee-orm.com/en/latest/)
+
+## Proof of Concept
+
+Below are some pictures to give a proof of concept:
+
+Here's a pic of the forum from ebay before download
+
+![Ebay Bidding and Buying Forum](/demoes/ebay_bidding_and_buying.png "Ebay Bidding and Buying Forum")
+
+And the resulting database in SQL
+
+![Posts SQL Database](/demoes/posts_database.png "Posts SQL Database")
+
+Some examples of the messages from ebay being parsed
+
+![Ebay Messages Example 1](/demoes/ebay_messages_1.png "Ebay Messages Example")
+
+![Ebay Messages Example 2](/demoes/ebay_messages_2.png "Ebay Messages Example 2")
+
+Both messages now in database, ready to be searched through for keywords
+
+![Messages SQL Database](/demoes/messages_database.png "Messages SQL Database")
+
+Keywords database
+
+![Keywords SQL Database](/demoes/keywords_database.png "Keyboards SQL Database")
+
+And finally the result output in Excel
+
+![Excel Output - Main](/demoes/excel_output_main.png "Excel Output - Main")
+
+![Excel Output - Simple Stats](/demoes/excel_output_keywords.png "Excel Output - Simple Stats")
+
+This has been checked and was working on May 1, 2018
