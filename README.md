@@ -57,8 +57,8 @@ You can also change the boards being parsed and the keywords to search for by mo
 
 ## Proof of Concept
 
-Below are some pictures to give a proof of concept. You can also see more pictures in the "demoes" folder above,
-as well as the sample Excel sheet from the screenshot below.
+Below are some pictures to give a proof of concept. You can also see more pictures in the [demoes](https://github.com/kelmore5/ebay-keyword-crawler/tree/master/demoes) folder above
+and you can look at a sample output from [this](https://github.com/kelmore5/ebay-keyword-crawler/raw/master/demoes/output_demo.xlsx) Excel sheet (screenshot below).
 
 Here's a pic of the forum from ebay before download
 
