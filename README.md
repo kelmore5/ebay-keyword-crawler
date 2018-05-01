@@ -14,10 +14,13 @@ Utilizing Selenium, the script has four steps:
 - Output the results to CSV and/or Excel
 
 Every page parsed using Selenium is downloaded and saved to a database via SQLite for safe-keeping,
-and the script should restart the browser automatically to forgo ebay's crawling protection.
+and the script should restart the browser automatically to forgo ebay's crawling protection
 
 This project utilizes two other projects of mine: [python-utilities](https://github.com/kelmore5/python-utilities) and [SeleniumBrowser](https://github.com/kelmore5/SeleniumBrowser), both of which
 should already be uploaded within this git repository.
+
+*Note: SQLite was chosen over MySQL or Postgres to improve portability of the script, but any database could be 
+adopted if need be.
 
 ## Install
 
@@ -40,7 +43,7 @@ First, download the repo
 
     git clone https://github.com/kelmore5/ebay-keyword-crawler
     
-Once downloaded and dependencies are installed, you can simply run it via
+Once downloaded and dependencies are installed, you can run it via
 
     python3 lib/EbayParser.py
     
@@ -78,7 +81,7 @@ Keywords database
 
 ![Keywords SQL Database](/demoes/keywords_database.png "Keyboards SQL Database")
 
-And finally the result output in Excel
+And finally the resulting output in Excel
 
 ![Excel Output - Main](/demoes/excel_output_main.png "Excel Output - Main")
 
