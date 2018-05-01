@@ -49,6 +49,23 @@ Once downloaded and dependencies are installed, you can run it via
     
 You can also change the boards being parsed and the keywords to search for by modifying EbayParser.py (top of file)
 
+```python {.line-numbers}
+# Set keywords to search for here
+keywords = [
+    ["good deal", "great deal", "fair deal", "best deal", "good price", "great price", "fair price", "best price",
+    "good customer", "great customer", "repeat customer", "fair", "honest", "reasonable"],
+    ["scam", "scams", "scammed", "scamming", "scammer", "scammers", "fraud", "frauds", "defrauded", "fraudster",
+    "fraudsters", "con", "cons", "conned", "conning", "con artist", "con artists", "trick", "tricks", "tricked",
+    "tricking", "trickster", "tricksters", "swindle", "swindles", "swindled", "swindler", "swindlers"]
+]
+    
+# Set board names and links to be downloaded here
+board_names = ['Bidding and Buying', 'Selling']
+    
+board_urls = ["http://community.ebay.com/t5/Bidding-Buying/bd-p/bidding-buying-db",
+                "http://community.ebay.com/t5/Selling/bd-p/selling-db"]
+```
+
 ## Extra Links
 
 - [Selenium](https://www.seleniumhq.org/)
