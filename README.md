@@ -47,9 +47,9 @@ Once downloaded and dependencies are installed, you can run it via
 
     python3 lib/EbayParser.py
     
-You can also change the boards being parsed and the keywords to search for by modifying EbayParser.py (top of file)
+You can also change the boards being parsed and the keywords to search for by modifying EbayParser.py (top of file, line 40)
 
-```python {.line-numbers}
+```python
 # Set keywords to search for here
 keywords = [
     ["good deal", "great deal", "fair deal", "best deal", "good price", "great price", "fair price", "best price",
