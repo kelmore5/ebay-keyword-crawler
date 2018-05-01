@@ -21,11 +21,11 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webelement import WebElement
 # noinspection PyUnresolvedReferences,PyPep8Naming
-from utilities.lib.Arrays import Arrays as arrays
+from utils.lib.Arrays import Arrays as arrays
 # noinspection PyUnresolvedReferences,PyPep8Naming
-from utilities.lib.Excel import Excel as sheets
+from utils.lib.Excel import Excel as sheets
 # noinspection PyUnresolvedReferences,PyPep8Naming
-from utilities.lib.Jsons import Jsons as jsons
+from utils.lib.Jsons import Jsons as jsons
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 dir_path = os.path.abspath(os.path.join(dir_path, '..'))

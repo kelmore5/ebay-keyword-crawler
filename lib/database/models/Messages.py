@@ -11,7 +11,7 @@ dir_path = os.path.abspath(os.path.join(dir_path, '../../..'))
 sys.path.append(dir_path)
 
 # noinspection PyPep8Naming
-from lib.utilities.lib.Jsons import Jsons as jsons
+from lib.utils.lib.Jsons import Jsons as jsons
 
 
 class MessagesKeys(object):
