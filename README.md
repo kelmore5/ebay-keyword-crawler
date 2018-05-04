@@ -76,12 +76,11 @@ board_urls = ["http://community.ebay.com/t5/Bidding-Buying/bd-p/bidding-buying-d
 
 ## Proof of Concept
 
-Below are some pictures to give a proof of concept.
+You can see a demo from a slideshow I've created [here](https://docs.google.com/presentation/d/1VlSL0dZrbhQeY3bIFUGEmSkFARycCc31zmQlNqx_7BY/edit?usp=sharing)
+or you can look at the sample output from [this](https://github.com/kelmore5/ebay-keyword-crawler/raw/master/demoes/output_demo.xlsx) Excel sheet, screenshotted below.
 
-You can see these and more in the [demoes](https://github.com/kelmore5/ebay-keyword-crawler/tree/master/demoes) folder above
-or you can look at a sample output from [this](https://github.com/kelmore5/ebay-keyword-crawler/raw/master/demoes/output_demo.xlsx) Excel sheet, screenshotted below.
-
-
+Either way here are some pictures to give a proof of concept, with even more residing in 
+the [demoes](https://github.com/kelmore5/ebay-keyword-crawler/tree/master/demoes) folder above
 
 Here's a pic of the forum from ebay before download
 
