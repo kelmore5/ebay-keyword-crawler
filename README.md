@@ -22,7 +22,7 @@ should already be uploaded within this git repository.
 *Note: SQLite was chosen over MySQL or Postgres to improve portability of the script, but any database could be 
 adopted if need be.
 
-This has been checked and was working on May 1, 2018, but I have no plans to maintain the project
+This has been checked and was working on **May 1, 2018**, but I have no plans to maintain the project
 
 ## Install
 
