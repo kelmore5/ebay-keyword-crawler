@@ -43,7 +43,7 @@ This has been checked and was working on **May 1, 2018**, but I have no plans to
 
 First, download the repo
 
-    git clone https://github.com/kelmore5/ebay-keyword-crawler
+    git clone --recurse-submodules -j8 https://github.com/kelmore5/ebay-keyword-crawler
     
 Once downloaded and dependencies are installed, you can run it via
 
