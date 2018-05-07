@@ -1,0 +1,3 @@
+[submodule "lib/SeleniumBrowser"]
+	path = lib/SeleniumBrowser
+	url = https://github.com/kelmore5/SeleniumBrowser
