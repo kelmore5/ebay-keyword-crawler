@@ -22,7 +22,7 @@ should already be uploaded within this git repository.
 *Note: SQLite was chosen over MySQL or Postgres to improve portability of the script, but any database could be 
 adopted if need be.
 
-This has been checked and was working on **May 1, 2018**, but I have no plans to maintain the project
+This has been checked and was working on **May 1, 2018**, but I have no plans to maintain the project.
 
 ## Install
 
@@ -79,35 +79,35 @@ board_urls = ["http://community.ebay.com/t5/Bidding-Buying/bd-p/bidding-buying-d
 ## Proof of Concept
 
 You can see a demo from a slideshow I've created [here](https://docs.google.com/presentation/d/1VlSL0dZrbhQeY3bIFUGEmSkFARycCc31zmQlNqx_7BY/edit?usp=sharing)
-or you can look at the sample output from [this](https://github.com/kelmore5/ebay-keyword-crawler/raw/master/demoes/output_demo.xlsx) Excel sheet, screenshotted below.
+or you can look at the sample output from [this](https://github.com/kelmore5/ebay-keyword-crawler/raw/master/demo/output_demo.xlsx) Excel sheet, screenshotted below.
 
 Either way here are some pictures to give a proof of concept, with even more residing in 
-the [demoes](https://github.com/kelmore5/ebay-keyword-crawler/tree/master/demoes) folder above
+the [demo](https://github.com/kelmore5/ebay-keyword-crawler/tree/master/demo) folder above
 
 Here's a pic of the forum from ebay before download
 
-![Ebay Bidding and Buying Forum](/demoes/ebay_bidding_and_buying.png "Ebay Bidding and Buying Forum")
+![Ebay Bidding and Buying Forum](/demo/pictures/ebay_bidding_and_buying.png "Ebay Bidding and Buying Forum")
 
 and the resulting database in SQL
 
-![Posts SQL Database](/demoes/posts_database.png "Posts SQL Database")
+![Posts SQL Database](/demo/pictures/posts_database.png "Posts SQL Database")
 
 Some examples of the messages being parsed from ebay 
 
-![Ebay Messages Example 1](/demoes/ebay_messages_1.png "Ebay Messages Example")
+![Ebay Messages Example 1](/demo/pictures/ebay_messages_1.png "Ebay Messages Example")
 
-![Ebay Messages Example 2](/demoes/ebay_messages_2.png "Ebay Messages Example 2")
+![Ebay Messages Example 2](/demo/pictures/ebay_messages_2.png "Ebay Messages Example 2")
 
 Both messages now in database, ready to be searched through for keywords
 
-![Messages SQL Database](/demoes/messages_database.png "Messages SQL Database")
+![Messages SQL Database](/demo/pictures/messages_database.png "Messages SQL Database")
 
 The keywords database
 
-![Keywords SQL Database](/demoes/keywords_database.png "Keyboards SQL Database")
+![Keywords SQL Database](/demo/pictures/keywords_database.png "Keyboards SQL Database")
 
 And finally the resulting output in Excel
 
-![Excel Output - Main](/demoes/excel_output_main.png "Excel Output - Main")
+![Excel Output - Main](/demo/pictures/excel_output_main.png "Excel Output - Main")
 
-![Excel Output - Simple Stats](/demoes/excel_output_keywords.png "Excel Output - Simple Stats")
+![Excel Output - Simple Stats](/demo/pictures/excel_output_keywords.png "Excel Output - Simple Stats")
